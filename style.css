@@ -1,0 +1,141 @@
+/*COLORS
+Green = #5EC560
+Dark Blue = #3C4456
+*/
+
+@import url('https://fonts.googleapis.com/css2?family=Forum&family=Work+Sans&display=swap');
+
+/*RESET BODY CSS*/
+
+body {
+    margin: 0;
+    padding: 0;
+}
+/*-----------------------------------------------------------------*/
+/*HEADER CSS*/
+
+header {
+    display: flex;
+    justify-content: space-around;
+    z-index: 1;
+    width: 90%;
+    height: 80px;
+    margin: 20px auto 0 auto;
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
+    background-color: #5EC560;
+}
+
+#logo {
+    height: fit-content;
+    width: fit-content;
+    
+    
+}
+
+#logo h1{
+    display: inline-block;
+    top: 50%;
+    transform: translateY(-100%);
+    margin-left: 20px;
+    font-family: 'Forum', cursive;
+    color: white;
+    
+}
+
+#logo img {
+    max-width: 101px;
+}
+
+#contato {
+    margin-top: 20px;
+}
+
+#contato img {
+    max-width: 40px;
+    margin-left: 20px;
+}
+
+#contato p {
+    display: inline-block;
+    font-family: 'Work Sans', sans-serif;
+    font-size: 25px;
+    color: white;
+    transform: translateY(-10px);
+}
+/*-----------------------------------------------------------------*/
+/*BANNER CSS*/
+
+#banner {
+    width: 90%;
+    height: fit-content;
+    margin: auto;
+    padding-top: 30px;
+    padding-bottom: 30px;
+    background-color: #3c4456;
+}
+
+#depoimento1 {
+    position: absolute;
+    width: 400px;
+    margin-left: 650px;
+    margin-top: 10px;
+    font-family: 'Work Sans', sans-serif;
+    font-size: 18px;
+    color: white;
+    text-align: justify;
+}
+
+#depoimento2 {
+    position: absolute;
+    width: 400px;
+    margin-top: 740px;
+    margin-left: 650px;
+    font-family: 'Work Sans', sans-serif;
+    font-size: 18px;
+    color: white;
+    text-align: justify;
+}
+
+
+#banner img{
+    
+    opacity: 0.7;
+}
+
+#banner1 {
+    max-width: 600px;
+    z-index: -1;
+    float: left;
+}
+
+#banner2 {
+    max-width: 600px;
+    z-index: -1;
+    float: right;
+}
+
+#banner3 {
+    position: relative;
+    max-width: 700px;
+    margin-left: 500px ;
+    transform: translateY(-250px);
+    z-index: 1;
+}
+
+#banner4 {
+    max-width: 600px;
+    z-index: -1;
+    float: left;
+    transform: translateY(-450px);
+}
+
+#banner5 {
+    max-width: 600px;
+    z-index: -1;
+    float: right;
+    transform: translateY(-450px);
+}
+
+
+/*-----------------------------------------------------------------*/
