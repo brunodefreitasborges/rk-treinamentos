@@ -19,8 +19,8 @@ header {
     justify-content: space-around;
     z-index: 1;
     width: 90%;
-    height: 80px;
-    margin: 20px auto 0 auto;
+    height: 4vw;
+    margin: 1vw auto 0 auto;
     border-top-left-radius: 20px;
     border-top-right-radius: 20px;
     background-color: #5EC560;
@@ -35,33 +35,34 @@ header {
 
 #logo h1{
     display: inline-block;
-    top: 50%;
-    transform: translateY(-100%);
-    margin-left: 20px;
+    top: 1vw;
+    transform: translateY(-2vw);
+    margin-left: 1vw;
     font-family: 'Forum', cursive;
+    font-size: 2vw;
     color: white;
     
 }
 
 #logo img {
-    max-width: 101px;
+    max-width: 6vw;
 }
 
 #contato {
-    margin-top: 20px;
+    margin-top: 0.5vw;
 }
 
 #contato img {
-    max-width: 40px;
-    margin-left: 20px;
+    max-width: 2vw;
+    margin-left: 1vw;
 }
 
 #contato p {
     display: inline-block;
     font-family: 'Work Sans', sans-serif;
-    font-size: 25px;
+    font-size: 1.5vw;
     color: white;
-    transform: translateY(-10px);
+    transform: translateY(-0.5vw);
 }
 /*-----------------------------------------------------------------*/
 /*BANNER CSS*/
@@ -70,29 +71,29 @@ header {
     width: 90%;
     height: fit-content;
     margin: auto;
-    padding-top: 30px;
-    padding-bottom: 30px;
+    padding-top: 2vw;
+    padding-bottom: 2vw;
     background-color: #3c4456;
 }
 
 #depoimento1 {
     position: absolute;
-    width: 400px;
-    margin-left: 650px;
+    width: 21vw;
+    margin-left: 34vw;
     margin-top: 10px;
     font-family: 'Work Sans', sans-serif;
-    font-size: 18px;
+    font-size: 0.9vw;
     color: white;
     text-align: justify;
 }
 
 #depoimento2 {
     position: absolute;
-    width: 400px;
-    margin-top: 740px;
-    margin-left: 650px;
+    width: 21vw;
+    margin-top: 40vw;
+    margin-left: 34vw;
     font-family: 'Work Sans', sans-serif;
-    font-size: 18px;
+    font-size: 0.9vw;
     color: white;
     text-align: justify;
 }
@@ -104,37 +105,37 @@ header {
 }
 
 #banner1 {
-    max-width: 600px;
+    max-width: 31.3vw;
     z-index: -1;
     float: left;
 }
 
 #banner2 {
-    max-width: 600px;
+    max-width: 31.3vw;
     z-index: -1;
     float: right;
 }
 
 #banner3 {
     position: relative;
-    max-width: 700px;
-    margin-left: 500px ;
-    transform: translateY(-250px);
+    max-width: 35vw;
+    margin-left: 27vw ;
+    transform: translateY(-12vw);
     z-index: 1;
 }
 
 #banner4 {
-    max-width: 600px;
+    max-width: 31.3vw;
     z-index: -1;
     float: left;
-    transform: translateY(-450px);
+    transform: translateY(-24vw);
 }
 
 #banner5 {
-    max-width: 600px;
+    max-width: 31.3vw;
     z-index: -1;
     float: right;
-    transform: translateY(-450px);
+    transform: translateY(-24vw);
 }
 
 
