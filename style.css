@@ -1,9 +1,16 @@
 /*COLORS
 Green = #5EC560
 Dark Blue = #3C4456
+Light - #EDF0F6
 */
 
+/*INITIAL SETUP*/
+
 @import url('https://fonts.googleapis.com/css2?family=Forum&family=Work+Sans&display=swap');
+
+html {
+    scroll-behavior: smooth;
+  }
 
 /*RESET BODY CSS*/
 
@@ -36,7 +43,7 @@ header {
 #logo h1{
     display: inline-block;
     top: 1vw;
-    transform: translateY(-2vw);
+    transform: translateY(-2.5vw);
     margin-left: 1vw;
     font-family: 'Forum', cursive;
     font-size: 2vw;
@@ -49,23 +56,35 @@ header {
     max-width: 6vw;
 }
 
-#contato {
-    margin-top: 0.5vw;
-}
-
-#contato img {
-    max-width: 2vw;
-    margin-left: 1vw;
-}
-
-#contato p {
-    display: inline-block;
+nav {
     font-family: 'Work Sans', sans-serif;
     font-size: 1.5vw;
-    color: white;
-    transform: translateY(-0.5vw);
-    text-shadow: 1px 1px 2px black;
 }
+
+nav ul{
+    display: flex;
+    justify-content: space-between;
+    list-style: none;
+    margin-top: 1.5vw;
+}
+
+nav li {
+    padding: 0.2vw 1vw 0.2vw 1vw;
+    border-radius: 10px;
+    transition: 0.5s;
+    }
+
+nav li:hover {
+    background-color: #3a9c3b;
+}
+
+nav a {
+    text-decoration: none;
+    margin-left: 1vw;
+    color: white;
+}
+
+
 /*-----------------------------------------------------------------*/
 /*BANNER CSS*/
 
@@ -102,43 +121,220 @@ header {
 
 
 #banner img{
-    
-    opacity: 0.7;
+    border-radius: 20px;
+
 }
+
 
 #banner1 {
     max-width: 31.3vw;
-    z-index: -1;
+    position: relative;
+    z-index: 0;
     float: left;
+    transform: translateX(1.5vw);
+    opacity: 0.7;
 }
 
 #banner2 {
     max-width: 31.3vw;
-    z-index: -1;
+    position: relative;
+    z-index: 0;
     float: right;
+    transform: translateX(-1.5vw);
+    opacity: 0.7;
 }
 
 #banner3 {
-    position: relative;
     max-width: 35vw;
     margin-left: 27vw ;
     transform: translateY(-12vw);
+    position: relative;
     z-index: 1;
+    opacity: 0.7;
 }
 
 #banner4 {
     max-width: 31.3vw;
-    z-index: -1;
+    position: relative;
+    z-index: 0;
     float: left;
-    transform: translateY(-24vw);
+    transform: translate(1.5vw, -24vw);
+    opacity: 0.7;
+    
+    
 }
 
 #banner5 {
     max-width: 31.3vw;
-    z-index: -1;
+    position: relative;
+    z-index: 0;
     float: right;
-    transform: translateY(-24vw);
+    transform: translate(-1.5vw, -24vw);
+    opacity: 0.7;
 }
 
 
 /*-----------------------------------------------------------------*/
+/*CLIENTES*/
+
+#clientes {
+   margin: auto;
+   margin-bottom: 0;
+   height: 28vw;
+   width: 90%;
+   background-color: #d4d6da;
+    
+
+}
+
+#clientes h2 {
+    position: absolute;
+    margin-left: 26vw;
+    font-family: 'Work Sans', sans-serif;
+    font-size: 3vw;
+    color: #3c4456;
+    text-shadow: 0.5px 0.5px 1px black;
+}
+
+#clientes ul {
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    height: 26vw;
+}
+
+.list-row {
+    transform: translateY(-13vw);
+    width: 90%;
+    margin: auto;
+    display: flex;
+    justify-content: space-between;
+}
+
+.separador {
+    color: #5EC560
+}
+
+#clientes li {
+    list-style: none;
+    font-style: italic;
+    margin: 1.0vw 1.0vw 1.0vw 1.0vw;
+    font-family:'Work Sans', sans-serif;
+    font-size: 1.5vw;
+    transition: 1s;
+}
+
+#clientes li:hover {
+    cursor: default;
+    transform: scale(1.3);
+}
+
+/*-----------------------------------------------------------------*/
+/*CURSOS*/
+
+#cursos {
+    width: 90%;
+    height: fit-content;
+    margin: auto;
+    transform: translateY(-2.5vw);
+    background-color: #5EC560;
+}
+
+#cursos h2 {
+    font-family: 'Work Sans', sans-serif;
+    font-size: 3vw;
+    color: #3c4456;
+    text-align: center;
+    transform: translateY(2.5vw);
+    text-shadow: 0.5px 0.5px 1px black;
+    
+}
+
+#cards-cursos {
+    display: flex;
+    flex-wrap: wrap;
+    flex-basis: 33.333333%;
+    justify-content: space-between;
+    padding: 2vw 3vw 2vw 3vw;
+}
+
+.card-curso {
+    margin-top: 3vw;
+    text-align: center;
+    width: 25vw;
+    height: 38vw;
+    background-color: #3c4456d7;
+    font-family: 'Work Sans', sans-serif;
+    color: white;
+    border-radius: 10px;
+    box-shadow: 5px 5px 10px black; 
+}
+
+.card-curso:hover {
+    transition: 0.5s;
+    transform: scale(1.1);
+    box-shadow: 5px 5px 20px black;
+}
+
+.card-curso h3 {
+    font-size: 1.2vw;
+    margin: 1vw;
+}
+
+.card-curso img {
+    max-width: 90%;
+}
+
+.card-curso p {
+    text-align: justify;
+    font-size: 1vw;
+    margin: 1vw 1.5vw 1vw 1.5vw;
+}
+
+#expand {
+    margin: auto;
+    margin-top: 1vw;
+    text-align: center;
+    font-family: 'Work Sans', sans-serif;
+    color: #3c4456;
+}
+
+#expand h3 {
+    margin-bottom: 1vw;
+}
+
+#expand img {
+    display: block;
+    margin: auto;
+    max-width: 3vw;
+}
+
+
+#img-expand {
+    width: 100%;
+    height: 2.5vw;
+    padding-top:1vw;
+    transition: 0.5s;
+}
+
+#img-expand:hover {
+    width: 100%;
+    height: 2.5vw;
+    background-color: #7dff7f;
+    cursor: pointer;
+}
+
+/*-----------------------------------------------------------------*/
+/*FOOTER*/
+
+#footer {
+    transform: translateY(-2.5vw);
+    height: 20vw;
+    width: 90%;
+    margin: auto;
+    margin-top: 0;
+    background-color: #3c4456;
+    border-bottom-left-radius: 20px;
+    border-bottom-right-radius: 20px;
+
+}

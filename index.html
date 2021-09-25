@@ -13,16 +13,26 @@
             <img src="assets/logo.png" alt="Company Logo">
             <h1>SEGURANÇA NO TRABALHO</h1>
         </div>
-        <div id="contato">
-            <img src="assets/whatsapp.png" alt="WhatsApp Logo">
-            <p>(51) 99119 - 1903</p>
-            <img src="assets/telefone.png" alt="Telefone Logo">
-            <p>(51) 3497 - 5383</p>
+        <nav>
+            <ul>
+                <a href="#banner">
+                    <li>Home</li>
+                </a>
+                <a href="#clientes">
+                    <li>Clientes</li>
+                </a>
+                <a href="#cursos">
+                    <li>Cursos</li>
+                </a>
+                <a href="#footer">
+                    <li>Contato</li>
+                </a>
+            </ul>
         </div>
     </header>
 
     <main>
-        <div id="banner">
+        <section id="banner">
             <p id="depoimento1"><em>"Agradecemos a Srta Raquel que sobre seus conhecimentos aperfeiçoaram e qualificaram nossos profissionais ainda melhor. Um abraço, até a próxima oportunidade."</em>
                 <br><br>
                 Marcelo Santos Alves
@@ -35,16 +45,90 @@
                 <br><br>
                 Caliendo Metalurgia e Gravações LTDA</p>
             
-                <img id="banner1" src="assets/banner1.jpg" alt="">
-                <img id="banner2" src="assets/banner2.jpg" alt="">
-                <img id="banner3" src="assets/banner3.jpg" alt="">
-                <img id="banner4" src="assets/banner4.jpg" alt="">
-                <img id="banner5" src="assets/banner5.jpg" alt="">
+                <img id="banner1" src="assets/banner1.jpg" alt="Imagem de trabalhadores segurando certificados" onmouseenter="bannerEnter(this)" onmouseleave="bannerLeave(this)">
+                <img id="banner2" src="assets/banner2.jpg" alt="Imagem de trabalhadores manuseando equipamentos" onmouseenter="bannerEnter(this)" onmouseleave="bannerLeave(this)">
+                <img id="banner3" src="assets/banner3.jpg" alt="Imagem de trabalhadores segurando certificados" onmouseenter="bannerEnter(this)" onmouseleave="bannerLeave(this)">
+                <img id="banner4" src="assets/banner4.jpg" alt="Imagem de trabalhadores ouvindo uma palestra" onmouseenter="bannerEnter(this)" onmouseleave="bannerLeave(this)">
+                <img id="banner5" src="assets/banner5.jpg" alt="Imagem de trabalhadores segurando certificados" onmouseenter="bannerEnter(this)" onmouseleave="bannerLeave(this)">
             
-        </div>
+        </section>
+
+        <section id="clientes">
+            <h2>Conheça nossos clientes</h2>
+            <ul>
+                <div class="list-row">
+                    <li>Ind. Com. Kodama (Seven Boys)</li>
+                    <li class="separador">-</li>
+                    <li>Memphis S/A Industrial</li>
+                    <li class="separador">-</li>
+                    <li>Saint Gobain do Brasil</li>
+                    
+                </div>
+                    
+                <div class="list-row">
+                    <li>Distribuidora Memphis Ltda</li>
+                    <li class="separador">-</li>
+                    <li>Servicorte Ind. Com. De Metais Ltda</li>
+                    <li class="separador"></liclass>-</li>
+                    <li>Souza Cruz S/A</li>
+                </div>
+                <div class="list-row">
+                    <li>Sindus Manut. e Sistemas Inds. Ltda</li>
+                    <li class="separador"></liclass>-</li>
+                    <li>Conceito Engenharia</li>
+                    <li class="separador"></liclass>-</li>
+                    <li>Construtora Bortoncello</li>
+                </div>
+                <div class="list-row">
+                    <li>Worker Engenharia</li>
+                    <li class="separador">-</li>
+                    <li>Ferramentas Paraboni</li>
+                    <li class="separador">-</li>
+                    <li>Caliendo</li>
+                    <li class="separador">-</li>
+                    <li>Exata Cargo</li>
+                </div>
+            </ul>
+        </section>
+
+        <section id="cursos">
+            <h2>Cursos Disponíveis</h2>
+            <div id="cards-cursos">
+
+                <div class="card-curso">
+                    <h3>TREINAMENTO OPERADOR DE MÁQUINAS (NR11)</h3>
+                    <img src="assets/nr11.jpg" alt="Imagem de uma empilhadeira">
+                    <p>Todos os equipamentos de força motriz própria empilhadeira, paleteiras, empilhadeira elétrica, ponte rolantes, talhas, monovias, guinchos, munck. devem ser manuseados por empregados habilitados pela empresa, sendo que a habilitação neste caso consiste em treinamento específico por empresa especializada em tal segmento. Esses cursos têm caráter obrigatório conforme NR11 do Ministério do Trabalho.</p>
+
+                </div>
+                <div class="card-curso">
+                    <h3>TREINAMENTO DE CONSCIENTIZAÇÃO E USO CORRETO DOS EPI´s
+                        (NR06)</h3>
+                    <img src="assets/nr06.jpg" alt="Imagem de um homem vestindo roupas protectivas">
+                    <p>Não basta apenas fornecer os equipamentos de proteção individual para os empregados, a empresa tem que exigir o seu uso, orientar e treinar os empregados quanto ao seu uso correto.
+
+                        Este treinamento tem caráter obrigatório conforme a NR06 do Ministério do Trabalho.</p>
+                </div>
+                <div class="card-curso">
+                    <h3>CURSO PARA MEMBROS DA CIPA (NR05)</h3>
+                    <img src="assets/nr05.jpg" alt="Imagem de homens trabalhando com o logo da CIPA sobreposto">
+                    <p>Este curso consiste em aulas teóricas e práticas com dinâmicas de grupo, de maneira a formar uma comissão paritária, produtiva e com um único objetivo, melhorar a qualidade de vida no ambiente de trabalho, visando a proteção dos empregados e da empresa. O curso tem caráter obrigatório conforme Norma Regulamentadora NR05, do Ministério do Trabalho.</p>
+                </div>
+                
+            </div>
+            <div id="expand">
+                <h3>Mais Cursos</h3>
+                <div id="img-expand" onclick="expandirCursos()"><img src="assets/expand.png" alt="Flecha apontando para baixo"></div>
+            </div>
+            
+        </section>
 
     </main>
 
-    
+    <footer id="footer">
+
+    </footer>
+
+    <script src="script.js"></script>
 </body>
 </html>
