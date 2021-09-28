@@ -18,6 +18,7 @@ body {
     margin: 0;
     padding: 0;
 }
+
 /*-----------------------------------------------------------------*/
 /*HEADER CSS*/
 
@@ -340,10 +341,14 @@ nav a {
 }
 
 #contato {
+    max-width: fit-content;
+    margin: 0;
     display: flex;
-    flex-direction: row;
-    justify-content: space-around;
+    flex-direction: column;
+    justify-content: space-between;
+    padding-left: 2vw;
     padding-top: 2vw;
+    
 }
 
 address {
@@ -352,12 +357,30 @@ address {
 
 #footer p {
     display: inline-block;
-    font-size: 1.5vw;
+    font-size: 1.0vw;
     font-family: 'Work Sans', sans-serif;
     color: #d4d6da;
 }
 
-#footer img {
-    max-width: 2vw;
+address img {
+    max-width: 1.5vw;
     transform: translateY(0.5vw);
 }
+
+#footer hr {
+    width: 95%;
+}
+
+#voltar {
+    transform: translate(-1vw , -15vw);
+    float: right;
+}
+
+#voltar img{
+    transform: translateY(1.3vw);
+    max-width: 3vw;
+    border-radius: 50%;
+    margin-left: 0.5vw;
+    
+}
+
