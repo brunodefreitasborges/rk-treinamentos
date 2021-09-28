@@ -338,3 +338,26 @@ nav a {
     border-bottom-right-radius: 20px;
 
 }
+
+#contato {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    padding-top: 2vw;
+}
+
+address {
+    font-style: normal;
+}
+
+#footer p {
+    display: inline-block;
+    font-size: 1.5vw;
+    font-family: 'Work Sans', sans-serif;
+    color: #d4d6da;
+}
+
+#footer img {
+    max-width: 2vw;
+    transform: translateY(0.5vw);
+}
