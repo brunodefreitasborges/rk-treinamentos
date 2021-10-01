@@ -54,7 +54,7 @@ function expandirCard(card) {
 }
 
 
-/* Open when someone clicks on the span element */
+// OPEN OVERLAY
 function openNav(card) {
     document.getElementById("myNav").style.height = "100%";
 
@@ -79,14 +79,14 @@ function openNav(card) {
 
     content = document.getElementById("overlay-content");
 
-    content.innerHTML = "<h3>TREINAMENTO OPERADOR DE MÁQUINAS (NR11)</h3><img src='assets/nr11.jpg' alt='Imagem de uma empilhadeira'><p>Todos os equipamentos de força motriz própria empilhadeira, paleteiras, empilhadeira elétrica, ponte rolantes, talhas, monovias, guinchos, munck. devem ser manuseados por empregados habilitados pela empresa, sendo que a habilitação neste caso consiste em treinamento específico por empresa especializada em tal segmento. Esses cursos têm caráter obrigatório conforme NR11 do Ministério do Trabalho.</p>"
+    //content.innerHTML = "<h3>TREINAMENTO OPERADOR DE MÁQUINAS (NR11)</h3><img src='assets/nr11.jpg' alt='Imagem de uma empilhadeira'><p>Todos os equipamentos de força motriz própria empilhadeira, paleteiras, empilhadeira elétrica, ponte rolantes, talhas, monovias, guinchos, munck. devem ser manuseados por empregados habilitados pela empresa, sendo que a habilitação neste caso consiste em treinamento específico por empresa especializada em tal segmento. Esses cursos têm caráter obrigatório conforme NR11 do Ministério do Trabalho.</p>"
 
 
 
 
   }
   
-  /* Close when someone clicks on the "x" symbol inside the overlay */
+  //CLOSE OVERLAY
   function closeNav() {
     document.getElementById("myNav").style.height = "0%";
   }
