@@ -28,7 +28,7 @@ header {
     z-index: 1;
     width: 90%;
     height: 4vw;
-    margin: 1vw auto 0 auto;
+    margin: 0 auto 0 auto;
     border-top-left-radius: 20px;
     border-top-right-radius: 20px;
     background-color: #5EC560;
@@ -55,6 +55,10 @@ header {
 
 #logo img {
     max-width: 6vw;
+}
+
+#btn-mobile {
+    display: none;
 }
 
 nav {
@@ -88,6 +92,10 @@ nav a {
 
 /*-----------------------------------------------------------------*/
 /*BANNER CSS*/
+
+#banner-mobile {
+    display: none;
+}
 
 #banner {
     width: 90%;
@@ -355,7 +363,7 @@ nav a {
 
 #footer {
     transform: translateY(-2.5vw);
-    height: 20vw;
+    height: 37vh;
     width: 90%;
     margin: auto;
     margin-top: 0;
@@ -366,11 +374,9 @@ nav a {
 }
 
 #contato {
-    max-width: fit-content;
+    display: inline-block;
+    width: fit-content;
     margin: 0;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
     padding-left: 2vw;
     padding-top: 2vw;
     
@@ -397,7 +403,7 @@ address img {
 }
 
 #voltar {
-    transform: translate(-1vw , -15vw);
+    margin-right: 2vw;
     float: right;
 }
 
@@ -413,11 +419,13 @@ address img {
     display: flex;
     justify-content: space-between;
     flex-wrap: nowrap;
+    margin: 0 3vw 0 3vw;
 }
 
-#copyright {
-    margin-left: 10vw;
+hr {
+    margin: auto;
 }
+
 
 
 

@@ -1,4 +1,26 @@
+//FUNÇÃO DO MENU HAMBURGUER
 
+const btnMobile = document.getElementById("btn-mobile");
+
+function toggleMenu(event) {
+    if (event.type === "touchstart") event.preventDefault();
+    const nav = document.getElementById("nav");
+    nav.classList.toggle('active');
+    const active = nav.classList.contains("active");
+    event.currentTarget.setAttribute("aria-expanded", active);
+    if(active) {
+        event.currentTarget.setAttribute("aria-label", "Fechar Menu");
+    } else {
+        event.currentTarget.setAttribute("aria-label", "Abrir Menu");
+    }
+}
+
+btnMobile.addEventListener('click', toggleMenu);
+btnMobile.addEventListener('touchstart', toggleMenu);
+
+
+
+//CONJUNTO DE FUNÇÕES PARA MUDAR OPACIDADE E Z-INDEX DO BANNER
 function bannerEnter(obj) {
 
     obj.style.transition = "0.5s";
@@ -23,6 +45,9 @@ function bannerLeave(obj) {
     
 }
 
+//-----------------------------------------------------------------------------//
+
+//CONJUNTO DE FUNÇÕES PARA EXPANDIR A LISTA DE CURSOS
 function expandirCursos() {
 
    
@@ -43,16 +68,8 @@ function expandirCursos() {
 
 }
 
-function expandirCard(card) {
-
-    
-
-    
-
-    
-    
-}
-
+//-----------------------------------------------------------------------------//
+//FUNÇÕES DO OVERLAY
 
 // OPEN OVERLAY
 function openNav(card) {
@@ -90,3 +107,5 @@ function openNav(card) {
   function closeNav() {
     document.getElementById("myNav").style.height = "0%";
   }
+
+  //-----------------------------------------------------------------------------//

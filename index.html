@@ -3,9 +3,9 @@
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="style-desktop.css" media="screen and (min-width: 480px)">
-    <link rel="stylesheet" href="style-mobile.css" media="screen and (max-width: 480px)">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no">
+    <link rel="stylesheet" href="style-desktop.css" media="screen and (min-width: 600px)">
+    <link rel="stylesheet" href="style-mobile.css" media="screen and (max-width: 600px)">
     <title>RK Treinamentos e Cursos - Operador de Empilhadeira, CIPA, Segurança no Trabalho</title>
 </head>
 <body id="body">
@@ -14,9 +14,14 @@
             <img src="assets/logo.png" alt="Company Logo">
             <h1>RK TREINAMENTOS</h1>
         </div>
-        <nav>
-            <ul>
-                <a href="#banner">
+        
+        
+        <nav id="nav">
+            <button id="btn-mobile" aria-label="Abrir Menu" aria-haspopup="true" aria-controls="menu" aria-expanded="false">
+                <span id="hamburguer"></span>
+            </button>
+            <ul id="menu" role="menu">
+                <a href="#logo">
                     <li>Home</li>
                 </a>
                 <a href="#clientes">
@@ -33,6 +38,44 @@
     </header>
 
     <main>
+        <section id="banner-mobile">
+            <div id="slider">
+                <div class="slide" id="slide-1">
+                    <img src="assets/banner1-mobile.jpg" alt="Imagem de trabalhadores segurando certificados">
+                    <p id="depoimento1"><em>"Agradecemos a Srta Raquel que sobre seus conhecimentos aperfeiçoaram e qualificaram nossos profissionais ainda melhor. Um abraço, até a próxima oportunidade."</em>
+                    <br><br>
+                    Marcelo Santos Alves
+                    <br>
+                    Cia Semeato de Aços
+                    <br>
+                    Butiá - RS</p></div>
+                <div class="slide" id="slide-2">
+                    <img src="assets/banner2-mobile.jpg" alt="Imagem de trabalhadores manuseando equipamentos">
+                    <p id="depoimento2"><em>"O pessoal gostou muito do curso de Ponte Rolante ministrado por sua pessoa! Pois demonstra confiança e conhecimento no assunto, esperamos firmar mais parcerias em futuros treinamentos com a TST! Sucesso pra vocês."</em>
+                        <br><br>
+                        Caliendo Metalurgia e Gravações LTDA</p>
+                </div>
+                <div class="slide" id="slide-3">
+                    <img src="assets/banner3-mobile.jpg" alt="Imagem de trabalhadores segurando certificados">
+                    <p id="depoimento3"><em>"O Treinamento de Operação de Empilhadeira a gás que ministrou aqui para nossa empresa, atendeu plenamente a nossa expectativa com elogios a sua pessoa de todo grupo de funcionários participantes.
+                        Continue assim e sucesso no seu empreendimento.
+                        Um abraço,"</em>
+                        <br><br>
+                        Joao Batista Buttenbender
+                        Técnico de Segurança do Trabalho<br>
+                        Building Efficiency Brasil<br>
+                        Johnson Controls</p>
+                </div>
+                <div class="slide" id="slide-4">
+                    <img src="assets/banner4-mobile.jpg" alt="Imagem de trabalhadores segurando certificados">
+                    <p id="depoimento4"><em>“A RK Treinamentos vem ganhando espaço no mercado de trabalho a cada dia, ministrando treinamentos com equipamentos de transporte, movimentação e içamento de materiais, com um método próprio e eficiente de maneira dinâmica, capacitando e reciclando os profissionais da área  buscando sempre a segurança na Operação dos Colaboradores.”</em>
+                        <br><br>
+                        Alvarez Santos<br>
+                        Técnico de Segurança do Trabalho<br>
+                        Empresa Delta Guia Logistica/Panazzolo</p>
+                </div>
+            </div>
+        </section>
         <section id="banner">
             <p id="depoimento1"><em>"Agradecemos a Srta Raquel que sobre seus conhecimentos aperfeiçoaram e qualificaram nossos profissionais ainda melhor. Um abraço, até a próxima oportunidade."</em>
                 <br><br>
@@ -153,11 +196,12 @@
                 </a>
             </address>
         </div>
-        <hr>
         <div id="voltar">
             <p>Voltar ao Topo</p>
             <a href="#logo"><img src="assets/voltar.png" alt="Seta"></a>
         </div>
+        <hr>
+        
         <div id="disclaimer">
             <p id="copyright">Copyright ©RK Treinamentos Todos os Direitos Reservados</p>
             <p id="designer">Webdesign por Bruno Borges</p>
@@ -198,5 +242,6 @@
   
 
     <script src="script.js"></script>
+    
 </body>
 </html>
