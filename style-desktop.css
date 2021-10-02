@@ -363,7 +363,7 @@ nav a {
 
 #footer {
     transform: translateY(-2.5vw);
-    height: 37vh;
+    height: 30%;
     width: 90%;
     margin: auto;
     margin-top: 0;
@@ -375,7 +375,6 @@ nav a {
 
 #contato {
     display: inline-block;
-    width: fit-content;
     margin: 0;
     padding-left: 2vw;
     padding-top: 2vw;
@@ -400,6 +399,7 @@ address img {
 
 #footer hr {
     width: 95%;
+    margin: auto;
 }
 
 #voltar {
@@ -422,9 +422,7 @@ address img {
     margin: 0 3vw 0 3vw;
 }
 
-hr {
-    margin: auto;
-}
+
 
 
 
