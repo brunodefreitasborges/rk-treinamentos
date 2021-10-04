@@ -17,6 +17,7 @@ html {
 body {
     margin: 0;
     padding: 0;
+    overflow-x: hidden;
 }
 
 /*-----------------------------------------------------------------*/
@@ -189,56 +190,98 @@ ul a {
 /*-----------------------------------------------------------------*/
 /*CLIENTES*/
 
-#clientes {
-   margin: auto;
-   margin-bottom: 0;
-   height: 28vw;
-   width: 90%;
-   background-color: #d4d6da;
-    
-
+@keyframes scrollLeft1 {
+    from {left: -100%;}
+    to {left: 100%;}
+}
+@keyframes scrollLeft2 {
+    from {left: 100%;}
+    to {left: -100%;}
 }
 
+
+#clientes {
+   padding-top: 0.5vh;
+   transform: translateY(-1.5vh);
+   height: 70vh;
+   width: 100%;
+   background-color: #d4d6da;
+   font-family: 'Work Sans', sans-serif;
+   
+}
+
+
 #clientes h2 {
-    position: relative;
-    margin-left: 26vw;
-    font-family: 'Work Sans', sans-serif;
-    font-size: 3vw;
+    text-align: center;
+    font-size: 6vw;
     color: #3c4456;
     text-shadow: 0.5px 0.5px 1px black;
 }
 
 #clientes ul {
-    margin: 0;
+    margin-top: 8vh;
     padding: 0;
-    width: 100%;
-    height: 26vw;
 }
+
 
 .list-row {
-    width: 90%;
-    margin: auto;
-    display: flex;
-    justify-content: space-between;
-    flex-wrap: wrap;
-}
-
-.separador {
-    color: #5EC560
+    width: 100%;
+    margin-top: 6vh;
+    overflow: hidden;
+    
 }
 
 #clientes li {
+    display: inline;
     list-style: none;
     font-style: italic;
-    margin: 1.0vw 1.0vw 1.0vw 1.0vw;
-    font-family:'Work Sans', sans-serif;
-    font-size: 1.5vw;
-    transition: 1s;
+    font-size: 5vw;
+    
+}
+.separador {
+    color: #3a9c3b;
 }
 
-#clientes li:hover {
-    cursor: default;
-    transform: scale(1.3);
+#lr1 {
+    position: absolute;
+    top: 10vw;
+    overflow: hidden;
+    animation-name: scrollLeft1;
+    animation-duration: 15s;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+}
+
+
+
+#lr2 {
+    position: absolute;
+    top: 30vw;
+    overflow: hidden;
+    animation-name: scrollLeft2;
+    animation-duration: 10s;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+}
+
+#lr3 {
+    position: absolute;
+    top: 50vw;
+    overflow: hidden;
+    animation-name: scrollLeft1;
+    animation-duration: 15s;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+}
+
+#lr4 {
+    position: absolute;
+    top: 70vw;
+    overflow: hidden;
+    animation-name: scrollLeft2;
+    animation-duration: 10s;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
 }
 
 /*-----------------------------------------------------------------*/
