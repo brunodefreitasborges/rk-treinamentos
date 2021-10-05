@@ -190,65 +190,11 @@ ul a {
 /*-----------------------------------------------------------------*/
 /*CLIENTES*/
 
-<<<<<<< HEAD
 
 
 
 
 
-=======
-#clientes {
-   margin: auto;
-   margin-bottom: 0;
-   height: 28vw;
-   width: 90%;
-   background-color: #d4d6da;
-    
-
-}
-
-#clientes h2 {
-    position: relative;
-    margin-left: 26vw;
-    font-family: 'Work Sans', sans-serif;
-    font-size: 3vw;
-    color: #3c4456;
-    text-shadow: 0.5px 0.5px 1px black;
-}
-
-#clientes ul {
-    margin: 0;
-    padding: 0;
-    width: 100%;
-    height: 26vw;
-}
-
-.list-row {
-    width: 90%;
-    margin: auto;
-    display: flex;
-    justify-content: space-between;
-    flex-wrap: wrap;
-}
-
-.separador {
-    color: #5EC560
-}
-
-#clientes li {
-    list-style: none;
-    font-style: italic;
-    margin: 1.0vw 1.0vw 1.0vw 1.0vw;
-    font-family:'Work Sans', sans-serif;
-    font-size: 1.5vw;
-    transition: 1s;
-}
-
-#clientes li:hover {
-    cursor: default;
-    transform: scale(1.3);
-}
->>>>>>> parent of 7847b6e (Responsive work)
 
 /*-----------------------------------------------------------------*/
 /*CURSOS*/
