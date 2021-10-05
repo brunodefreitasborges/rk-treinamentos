@@ -190,6 +190,14 @@ ul a {
 /*-----------------------------------------------------------------*/
 /*CLIENTES*/
 
+@keyframes slide {
+    0% {margin-top: 30vh;}
+    25% {margin-top:-5vh;}
+    50% {margin-top:-55vh;}
+    75% {margin-top:-105vh;}
+    100% {margin-top:-155vh;}
+}
+
 #clientes {
    margin-bottom: 0;
    height: 80vw;
@@ -211,24 +219,34 @@ ul a {
 #clientes ul {
     margin: 0;
     padding: 0;
-    width: 100%;
-}
-
-.list-row {
-    display: flex;
-    justify-content: space-between;
-    flex-wrap: nowrap;
+    position: relative;
 }
 
 .separador {
-    color: #5EC560
+    display: none;
 }
 
 #clientes li {
     list-style: none;
     font-style: italic;
-    font-size: 1.5vw;
+    font-size: 5vw;
+    text-align: center;
+    padding-bottom: 7vh;
 }
+
+
+.slider-clientes {
+    height: 30vh;
+    overflow: hidden;
+}
+
+.anim1 {
+    margin: 0;
+    padding: 0;
+    animation: slide 20s linear infinite;
+}
+
+
 
 
 
@@ -236,10 +254,10 @@ ul a {
 /*CURSOS*/
 
 #cursos {
-    width: 90%;
-    height: fit-content;
+    width: 100%;
+    height: 80vh;
     margin: auto;
-    transform: translateY(-2.5vw);
+    transform: translateY(-5vh);
     background-color: #5EC560;
 }
 
@@ -356,8 +374,8 @@ ul a {
 
 #footer {
     transform: translateY(-2.5vw);
-    height: 20vw;
-    width: 90%;
+    height: 60vh;
+    width: 100%;
     margin: auto;
     margin-top: 0;
     background-color: #3c4456;
@@ -374,6 +392,7 @@ ul a {
     justify-content: space-between;
     padding-left: 2vw;
     padding-top: 2vw;
+    font-size: 5vw;
     
 }
 
@@ -383,14 +402,13 @@ address {
 
 #footer p {
     display: inline-block;
-    font-size: 1.0vw;
     font-family: 'Work Sans', sans-serif;
     color: #d4d6da;
 }
 
 address img {
-    max-width: 1.5vw;
-    transform: translateY(0.5vw);
+    max-width: 8vw;
+    transform: translateY(1.5vh);
 }
 
 #footer hr {
@@ -398,26 +416,23 @@ address img {
 }
 
 #voltar {
-    transform: translate(-1vw , -15vw);
-    float: right;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
 
 #voltar img{
-    transform: translateY(1.3vw);
-    max-width: 3vw;
+    max-width: 10vw;
     border-radius: 50%;
-    margin-left: 0.5vw;
+    transform: translateY(-1vh);
     
 }
 
 #disclaimer {
     display: flex;
-    justify-content: space-between;
+    justify-content: space-around;
     flex-wrap: nowrap;
-}
-
-#copyright {
-    margin-left: 10vw;
+    font-size: 2vw;
 }
 
 
