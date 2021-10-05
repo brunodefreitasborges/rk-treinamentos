@@ -18,23 +18,6 @@ function toggleMenu(event) {
 btnMobile.addEventListener('click', toggleMenu);
 btnMobile.addEventListener('touchstart', toggleMenu);
 
-//-----------------------------------------------------------------------------//
-
-//FUNÇÕES PARA PARAR/RESUME ANIMAÇÕES DA DIV CLIENTES
-
-let clientes = document.getElementById('clientes');
-
-clientes.addEventListener('mouseenter', stopAnimation);
-clientes.addEventListener('mouseleave', resumeAnimation);
-
-function stopAnimation() {
-    document.getElementById('lr1').style.animationPlayState = 'paused';
-}
-
-function resumeAnimation() {
-    document.getElementById('lr1').style.animationPlayState = 'running';
-}
-
 
 
 //CONJUNTO DE FUNÇÕES PARA MUDAR OPACIDADE E Z-INDEX DO BANNER
