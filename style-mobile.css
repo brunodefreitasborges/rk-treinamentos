@@ -17,7 +17,6 @@ html {
 body {
     margin: 0;
     padding: 0;
-    overflow-x: hidden;
 }
 
 /*-----------------------------------------------------------------*/
@@ -151,13 +150,14 @@ ul a {
 
 #banner-mobile {
     width: 100%;
-    height: 84vh;
+    height: 80vh;
     background-color: #3C4456;
+    overflow-y: none;
 }
 
 #slider {
     width: 100%;
-    height: 80vh;
+    height: 100%;
     display: flex;
     overflow-x: auto;
     scroll-snap-type: x mandatory;
@@ -190,99 +190,11 @@ ul a {
 /*-----------------------------------------------------------------*/
 /*CLIENTES*/
 
-@keyframes scrollLeft1 {
-    from {left: -100%;}
-    to {left: 100%;}
-}
-@keyframes scrollLeft2 {
-    from {left: 100%;}
-    to {left: -100%;}
-}
-
-
-#clientes {
-   padding-top: 0.5vh;
-   transform: translateY(-1.5vh);
-   height: 70vh;
-   width: 100%;
-   background-color: #d4d6da;
-   font-family: 'Work Sans', sans-serif;
-   
-}
-
-
-#clientes h2 {
-    text-align: center;
-    font-size: 6vw;
-    color: #3c4456;
-    text-shadow: 0.5px 0.5px 1px black;
-}
-
-#clientes ul {
-    margin-top: 8vh;
-    padding: 0;
-}
-
-
-.list-row {
-    width: 100%;
-    margin-top: 6vh;
-    overflow: hidden;
-    
-}
-
-#clientes li {
-    display: inline;
-    list-style: none;
-    font-style: italic;
-    font-size: 5vw;
-    
-}
-.separador {
-    color: #3a9c3b;
-}
-
-#lr1 {
-    position: absolute;
-    top: 10vw;
-    overflow: hidden;
-    animation-name: scrollLeft1;
-    animation-duration: 15s;
-    animation-iteration-count: infinite;
-    animation-timing-function: linear;
-}
 
 
 
-#lr2 {
-    position: absolute;
-    top: 30vw;
-    overflow: hidden;
-    animation-name: scrollLeft2;
-    animation-duration: 10s;
-    animation-iteration-count: infinite;
-    animation-timing-function: linear;
-}
 
-#lr3 {
-    position: absolute;
-    top: 50vw;
-    overflow: hidden;
-    animation-name: scrollLeft1;
-    animation-duration: 15s;
-    animation-iteration-count: infinite;
-    animation-timing-function: linear;
-}
 
-#lr4 {
-    position: absolute;
-    top: 70vw;
-    overflow: hidden;
-    animation-name: scrollLeft2;
-    animation-duration: 10s;
-    animation-iteration-count: infinite;
-    animation-timing-function: linear;
-}
 
 /*-----------------------------------------------------------------*/
 /*CURSOS*/
