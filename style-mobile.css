@@ -191,11 +191,12 @@ ul a {
 /*CLIENTES*/
 
 @keyframes slide {
-    0% {margin-top: 30vh;}
-    25% {margin-top:-5vh;}
-    50% {margin-top:-55vh;}
-    75% {margin-top:-105vh;}
-    100% {margin-top:-155vh;}
+    0% {top: 30vh;}
+    100% {top:-130vh;}
+}
+
+#desktop-list {
+    display: none;
 }
 
 #clientes {
@@ -216,16 +217,6 @@ ul a {
     text-shadow: 0.5px 0.5px 1px black;
 }
 
-#clientes ul {
-    margin: 0;
-    padding: 0;
-    position: relative;
-}
-
-.separador {
-    display: none;
-}
-
 #clientes li {
     list-style: none;
     font-style: italic;
@@ -235,27 +226,35 @@ ul a {
 }
 
 
-.slider-clientes {
+
+#slider-clientes {
+    position: relative;
     height: 30vh;
+    width: 100%;
     overflow: hidden;
+    
 }
 
-.anim1 {
+#mobile-list {
     margin: 0;
     padding: 0;
-    animation: slide 20s linear infinite;
+    position: absolute; 
+    left: 0;
+    right: 0;
+    animation: slide 15s linear infinite;
+    animation-play-state: running;
 }
 
-
-
-
+#mobile-list:hover {
+    animation-play-state: paused;
+}
 
 /*-----------------------------------------------------------------*/
 /*CURSOS*/
 
 #cursos {
     width: 100%;
-    height: 80vh;
+   
     margin: auto;
     transform: translateY(-5vh);
     background-color: #5EC560;

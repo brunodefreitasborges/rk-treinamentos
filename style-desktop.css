@@ -186,6 +186,14 @@ nav a {
 /*-----------------------------------------------------------------*/
 /*CLIENTES*/
 
+#mobile-list {
+    display: none;
+}
+
+.slider-clientes {
+    display: none;
+}
+
 #clientes {
    margin: auto;
    margin-bottom: 0;

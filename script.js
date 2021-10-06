@@ -41,12 +41,15 @@ function bannerLeave(obj) {
     }
 
     obj.style.opacity = 0.7;
-    
-    
 }
+//-----------------------------------------------------------------------------//
+//CONJUNTO DE FUNÇÕES PARA PAUSAR A LIST ROLANTE DE CLIENTES 
+
+    
+
+
 
 //-----------------------------------------------------------------------------//
-
 //CONJUNTO DE FUNÇÕES PARA EXPANDIR A LISTA DE CURSOS
 function expandirCursos() {
 
