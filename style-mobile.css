@@ -249,43 +249,54 @@ ul a {
     animation-play-state: paused;
 }
 
+
 /*-----------------------------------------------------------------*/
 /*CURSOS*/
 
+
+
 #cursos {
     width: 100%;
-   
+    height: 100vh;
     margin: auto;
-    transform: translateY(-5vh);
+    transform: translateY(-6.5vh);
     background-color: #5EC560;
 }
 
 #cursos h2 {
     font-family: 'Work Sans', sans-serif;
-    font-size: 3vw;
+    font-size: 6vw;
     color: #3c4456;
     text-align: center;
-    transform: translateY(2.5vw);
+    transform: translateY(3vh);
+    margin-bottom: 4vh;
     text-shadow: 0.5px 0.5px 1px black;
     
 }
 
-#cards-cursos {
+#slider-cursos {
+    margin: auto;
+    width: 100%;
+    height: 100%;
     display: flex;
-    flex-wrap: wrap;
-    flex-basis: 33.333333%;
-    justify-content: space-between;
-    padding: 2vw 3vw 2vw 3vw;
+    overflow-x: auto;
+    scroll-snap-type: x mandatory;
+    -webkit-overflow-scrolling: touch;
 }
 
 .card-curso {
+    background-size: contain;
+    width: 90%;
+    flex-shrink: 0;
+    scroll-snap-align: center;
     display: flex;
     flex-direction: column;
     align-items: center;
-    margin-top: 3vw;
+    margin-top: 5vw;
+    margin-left: 5%;
+    margin-right: 5%;
     text-align: center;
-    width: 25vw;
-    height: 38vw;
+    height: 80vh;
     background-color: #3c4456d7;
     font-family: 'Work Sans', sans-serif;
     color: white;
@@ -293,14 +304,9 @@ ul a {
     box-shadow: 5px 5px 10px black; 
 }
 
-.card-curso:hover {
-    transition: 0.5s;
-    transform: scale(1.1);
-    box-shadow: 5px 5px 20px black;
-}
 
 .card-curso h3 {
-    font-size: 1.2vw;
+    font-size: 5vw;
     margin: 1vw;
 }
 
@@ -310,8 +316,8 @@ ul a {
 
 .card-curso p {
     text-align: justify;
-    font-size: 1vw;
-    margin: 1vw 1.5vw 1vw 1.5vw;
+    font-size: 4vw;
+    padding: 1vw 3vw 1vw 3vw;
 }
 
 .card-curso button {
@@ -320,53 +326,18 @@ ul a {
     margin: auto;
     margin-bottom: 1vw;
     font-family: 'Work Sans', sans-serif;
-    font-size: 1vw;
+    font-size: 5vw;
     background-color: #3a9c3b;
     color: white;
-    padding: 1vw;
+    padding: 3vw;
     border-radius: 10px;
     border: none;
     box-shadow: 1px 1px 5px black;
     transition: background-color 0.5s;
 }
 
-.card-curso button:hover {
-    background-color: #5EC560;
-    cursor: pointer;
-}
-
-#expand {
-    margin: auto;
-    margin-top: 1vw;
-    text-align: center;
-    font-family: 'Work Sans', sans-serif;
-    color: #3c4456;
-}
-
-#expand h3 {
-    margin-bottom: 1vw;
-}
-
-#expand img {
-    display: block;
-    margin: auto;
-    max-width: 3vw;
-}
 
 
-#img-expand {
-    width: 100%;
-    height: 2.5vw;
-    padding-top:1vw;
-    transition: 0.5s;
-}
-
-#img-expand:hover {
-    width: 100%;
-    height: 2.5vw;
-    background-color: #7dff7f;
-    cursor: pointer;
-}
 
 /*-----------------------------------------------------------------*/
 /*FOOTER*/
