@@ -4,13 +4,14 @@ Dark Blue = #3C4456
 Light - #EDF0F6
 */
 
+
 /*INITIAL SETUP*/
 
 @import url('https://fonts.googleapis.com/css2?family=Forum&family=Work+Sans&display=swap');
-
 html {
     scroll-behavior: smooth;
-  }
+}
+
 
 /*RESET BODY CSS*/
 
@@ -19,7 +20,10 @@ body {
     padding: 0;
 }
 
+
 /*-----------------------------------------------------------------*/
+
+
 /*HEADER CSS*/
 
 header {
@@ -39,7 +43,7 @@ header {
     width: fit-content;
 }
 
-#logo h1{
+#logo h1 {
     display: inline-block;
     transform: translateY(2vw);
     margin-left: 2vw;
@@ -47,7 +51,6 @@ header {
     font-size: 7vw;
     color: white;
     text-shadow: 1px 1px 2px black;
-    
 }
 
 #logo img {
@@ -75,17 +78,15 @@ header {
     transition: .4s;
     visibility: hidden;
     overflow: hidden;
-    
 }
 
 #nav.active #menu {
     display: block;
     height: 50vw;
     visibility: visible;
-    
 }
 
-#menu li{
+#menu li {
     list-style: none;
     text-align: center;
     color: white;
@@ -109,12 +110,12 @@ ul a {
 
 #hamburguer {
     display: block;
-    width:10vw;
+    width: 10vw;
     border-top: 1vw solid;
-    
 }
 
-#hamburguer::after, #hamburguer::before {
+#hamburguer::after,
+#hamburguer::before {
     content: '';
     display: block;
     width: 10vw;
@@ -123,7 +124,6 @@ ul a {
     margin-top: 2vw;
     transition: .3s;
     position: relative;
-
 }
 
 #nav.active #hamburguer {
@@ -141,11 +141,12 @@ ul a {
 
 
 /*-----------------------------------------------------------------*/
+
+
 /*BANNER CSS*/
 
 #banner {
     display: none;
-    
 }
 
 #banner-mobile {
@@ -171,7 +172,7 @@ ul a {
     height: 100%;
 }
 
-#slider > div {
+#slider>div {
     scroll-snap-align: start;
 }
 
@@ -187,12 +188,19 @@ ul a {
     color: white;
 }
 
+
 /*-----------------------------------------------------------------*/
+
+
 /*CLIENTES*/
 
 @keyframes slide {
-    0% {top: 30vh;}
-    100% {top:-130vh;}
+    0% {
+        top: 30vh;
+    }
+    100% {
+        top: -130vh;
+    }
 }
 
 #desktop-list {
@@ -200,13 +208,12 @@ ul a {
 }
 
 #clientes {
-   margin-bottom: 0;
-   height: 80vw;
-   width: 100%;
-   background-color: #d4d6da;
-   font-family:'Work Sans', sans-serif;
-   transform: translateY(-3.5vh);
-   
+    margin-bottom: 0;
+    height: 80vw;
+    width: 100%;
+    background-color: #d4d6da;
+    font-family: 'Work Sans', sans-serif;
+    transform: translateY(-3.5vh);
 }
 
 #clientes h2 {
@@ -225,20 +232,17 @@ ul a {
     padding-bottom: 7vh;
 }
 
-
-
 #slider-clientes {
     position: relative;
     height: 30vh;
     width: 100%;
     overflow: hidden;
-    
 }
 
 #mobile-list {
     margin: 0;
     padding: 0;
-    position: absolute; 
+    position: absolute;
     left: 0;
     right: 0;
     animation: slide 15s linear infinite;
@@ -251,13 +255,17 @@ ul a {
 
 
 /*-----------------------------------------------------------------*/
+
+
 /*CURSOS*/
 
-
+.desktop-img {
+    display: none;
+}
 
 #cursos {
     width: 100%;
-    height: 100vh;
+    height: 105vh;
     margin: auto;
     transform: translateY(-6.5vh);
     background-color: #5EC560;
@@ -271,7 +279,6 @@ ul a {
     transform: translateY(3vh);
     margin-bottom: 4vh;
     text-shadow: 0.5px 0.5px 1px black;
-    
 }
 
 #slider-cursos {
@@ -279,39 +286,57 @@ ul a {
     width: 100%;
     height: 100%;
     display: flex;
-    overflow-x: auto;
+    overflow-x: scroll;
     scroll-snap-type: x mandatory;
     -webkit-overflow-scrolling: touch;
 }
 
 .card-curso {
     background-size: contain;
-    width: 90%;
+    width: 85%;
     flex-shrink: 0;
     scroll-snap-align: center;
     display: flex;
     flex-direction: column;
     align-items: center;
-    margin-top: 5vw;
-    margin-left: 5%;
-    margin-right: 5%;
+    margin-top: 7.5%;
+    margin-left: 7.5%;
+    margin-right: 0;
     text-align: center;
     height: 80vh;
     background-color: #3c4456d7;
     font-family: 'Work Sans', sans-serif;
     color: white;
     border-radius: 10px;
-    box-shadow: 5px 5px 10px black; 
+    box-shadow: 5px 5px 10px black;
 }
 
+#curso7 {
+    margin-right: 7.5%;
+}
+
+.right-arrow {
+    width: 10%;
+    height: 3.2vh;
+    align-self: end;
+    transform: translate(2.5vw, -59.4vh);
+}
+
+.left-arrow {
+    width: 10%;
+    height: 3vh;
+    align-self: end;
+    transform: translate(5vw, -59.5vh);
+}
 
 .card-curso h3 {
     font-size: 5vw;
-    margin: 1vw;
+    margin: 2vh;
 }
 
 .card-curso img {
-    max-width: 90%;
+    width: 90%;
+    max-width: 80%;
 }
 
 .card-curso p {
@@ -324,7 +349,7 @@ ul a {
     align-self: flex-end;
     width: fit-content;
     margin: auto;
-    margin-bottom: 1vw;
+    margin-bottom: 2vh;
     font-family: 'Work Sans', sans-serif;
     font-size: 5vw;
     background-color: #3a9c3b;
@@ -337,21 +362,20 @@ ul a {
 }
 
 
-
-
 /*-----------------------------------------------------------------*/
+
+
 /*FOOTER*/
 
 #footer {
-    transform: translateY(-2.5vw);
-    height: 60vh;
+    transform: translateY(-6.5vh);
+    height: 55vh;
     width: 100%;
     margin: auto;
     margin-top: 0;
     background-color: #3c4456;
     border-bottom-left-radius: 20px;
     border-bottom-right-radius: 20px;
-
 }
 
 #contato {
@@ -362,8 +386,7 @@ ul a {
     justify-content: space-between;
     padding-left: 2vw;
     padding-top: 2vw;
-    font-size: 5vw;
-    
+    font-size: 4vw;
 }
 
 address {
@@ -381,6 +404,11 @@ address img {
     transform: translateY(1.5vh);
 }
 
+.tap-icon {
+    max-width: 5vw;
+    transform: translateY(1vh);
+}
+
 #footer hr {
     width: 95%;
 }
@@ -391,11 +419,10 @@ address img {
     align-items: center;
 }
 
-#voltar img{
+#voltar img {
     max-width: 10vw;
     border-radius: 50%;
     transform: translateY(-1vh);
-    
 }
 
 #disclaimer {
@@ -406,108 +433,120 @@ address img {
 }
 
 
-
-
 /* The Overlay (background) */
+
 .overlay {
     height: 0;
     width: 100%;
-    position: fixed; /* Stay in place */
-    z-index: 1; /* Sit on top */
+    position: fixed;
+    /* Stay in place */
+    z-index: 1;
+    /* Sit on top */
     left: 0;
     top: 0;
-    background-color: rgb(0,0,0); /* Black fallback color */
-    background-color: rgba(0,0,0, 0.9); /* Black w/opacity */
-    overflow-x: hidden; /* Disable horizontal scroll */
+    background-color: rgb(0, 0, 0);
+    /* Black fallback color */
+    background-color: rgba(0, 0, 0, 0.9);
+    /* Black w/opacity */
+    overflow-x: hidden;
+    /* Disable horizontal scroll */
     transition: 0.5s;
-  }
-  
-  /* Position the content inside the overlay */
-  .overlay-content {
+}
+
+
+/* Position the content inside the overlay */
+
+.overlay-content {
     position: relative;
-    top: 25%; /* 25% from the top */
-    width: 100%; /* 100% width */
-    text-align: center; /* Centered text/links */
-    margin-top: 30px; /* 30px top margin to avoid conflict with the close button on smaller screens */
-  }
-  
-  /* The navigation links inside the overlay */
-  .overlay a {
+    top: 25%;
+    /* 25% from the top */
+    width: 100%;
+    /* 100% width */
+    text-align: center;
+    /* Centered text/links */
+    margin-top: 30px;
+    /* 30px top margin to avoid conflict with the close button on smaller screens */
+}
+
+
+/* The navigation links inside the overlay */
+
+.overlay a {
     padding: 8px;
     text-decoration: none;
     font-size: 36px;
     color: #818181;
-    display: block; /* Display block instead of inline */
-    transition: 0.3s; /* Transition effects on hover (color) */
-  }
-  
-  
-  /* Position the close button (top right corner) */
-  .overlay .closebtn {
+    display: block;
+    /* Display block instead of inline */
+    transition: 0.3s;
+    /* Transition effects on hover (color) */
+}
+
+
+/* Position the close button (top right corner) */
+
+.overlay .closebtn {
     position: absolute;
     top: 20px;
     right: 45px;
     font-size: 60px;
-  }
+}
 
-  /*Style overlay content*/
 
-    #overlay-content {
-        height: 100%;
-        display: flex;
-        flex-direction: column;
-        flex-wrap: wrap;
-        justify-content: space-around;
-        
-    }
+/*Style overlay content*/
 
-    #overlay-content img {
-        max-width: 25vw;
-        margin: 1vw;
-        border-radius: 10%;
-    }
+#overlay-content {
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
 
-    #imagens-curso {
-        height: 100%;
-        width: 50%;
-        display: flex;
-        flex-direction: column;
-        flex-wrap: wrap;
-        justify-content: space-around;
-    }
+#overlay-content img {
+    max-width: 25vw;
+    margin: 1vw;
+    border-radius: 10%;
+}
 
-    #descricao-curso {
-        height: 100%;
-        width: 40%;
-        margin-top: 4vw;
-        display: flex;
-        flex-direction: column;
-        font-family: 'Work Sans', sans-serif;
-        color: white;
-    }
+#imagens-curso {
+    height: 100%;
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
 
-    #descricao-curso button {
-        align-self: center;
-        margin-top: 10vw;
-        font-family: 'Work Sans', sans-serif;
-        font-size: 2vw;
-        color: #d4d6da;
-        padding-top: 1vw;
-        padding-bottom: 1vw;
-        padding-left: 3vw;
-        padding-right: 3vw;
-        background-color: #3a9c3b;
-        border: none;
-        border-radius: 10px;
-        transition: 0.5s;
-    }
+#descricao-curso {
+    height: 100%;
+    width: 40%;
+    margin-top: 4vw;
+    display: flex;
+    flex-direction: column;
+    font-family: 'Work Sans', sans-serif;
+    color: white;
+}
 
-    #descricao-curso button:hover {
-        background-color: #5EC560;
-        color: white;
-        cursor: pointer;
-        transform: scale(1.2);
-    }
+#descricao-curso button {
+    align-self: center;
+    margin-top: 10vw;
+    font-family: 'Work Sans', sans-serif;
+    font-size: 2vw;
+    color: #d4d6da;
+    padding-top: 1vw;
+    padding-bottom: 1vw;
+    padding-left: 3vw;
+    padding-right: 3vw;
+    background-color: #3a9c3b;
+    border: none;
+    border-radius: 10px;
+    transition: 0.5s;
+}
 
-    
-
+#descricao-curso button:hover {
+    background-color: #5EC560;
+    color: white;
+    cursor: pointer;
+    transform: scale(1.2);
+}
