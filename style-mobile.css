@@ -350,6 +350,7 @@ ul a {
     width: fit-content;
     margin: auto;
     margin-bottom: 2vh;
+    margin-top: 2vh;
     font-family: 'Work Sans', sans-serif;
     font-size: 5vw;
     background-color: #3a9c3b;
@@ -368,38 +369,9 @@ ul a {
     font-size: 3vw;
 }
 
-#duracao1 {
-    transform: translateY(0vh);
+.btn-duracao {
+    margin-top: auto;
 }
-
-#duracao2 {
-    transform: translateY(3.5vh);
-}
-
-#duracao3 {
-    transform: translateY(3.5vh);
-}
-
-#duracao4 {
-    transform: translateY(2vh);
-}
-
-#duracao5 {
-    transform: translateY(2vh);
-}
-
-#duracao6 {
-    transform: translateY(3.5vh);
-}
-
-#duracao7 {
-    transform: translateY(7vh);
-}
-
-#duracao8 {
-    transform: translateY(5vh);
-}
-
 
 
 /*-----------------------------------------------------------------*/
