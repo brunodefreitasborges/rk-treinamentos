@@ -339,7 +339,7 @@ ul a {
     max-width: 80%;
 }
 
-.card-curso p {
+.card-curso .descricao {
     text-align: justify;
     font-size: 4vw;
     padding: 1vw 3vw 1vw 3vw;
@@ -360,6 +360,46 @@ ul a {
     box-shadow: 1px 1px 5px black;
     transition: background-color 0.5s;
 }
+
+.duracao {
+    margin: auto;
+    text-align: center;
+    font-style: italic;
+    font-size: 3vw;
+}
+
+#duracao1 {
+    transform: translateY(0vh);
+}
+
+#duracao2 {
+    transform: translateY(3.5vh);
+}
+
+#duracao3 {
+    transform: translateY(3.5vh);
+}
+
+#duracao4 {
+    transform: translateY(2vh);
+}
+
+#duracao5 {
+    transform: translateY(2vh);
+}
+
+#duracao6 {
+    transform: translateY(3.5vh);
+}
+
+#duracao7 {
+    transform: translateY(7vh);
+}
+
+#duracao8 {
+    transform: translateY(5vh);
+}
+
 
 
 /*-----------------------------------------------------------------*/
@@ -430,123 +470,4 @@ address img {
     justify-content: space-around;
     flex-wrap: nowrap;
     font-size: 2vw;
-}
-
-
-/* The Overlay (background) */
-
-.overlay {
-    height: 0;
-    width: 100%;
-    position: fixed;
-    /* Stay in place */
-    z-index: 1;
-    /* Sit on top */
-    left: 0;
-    top: 0;
-    background-color: rgb(0, 0, 0);
-    /* Black fallback color */
-    background-color: rgba(0, 0, 0, 0.9);
-    /* Black w/opacity */
-    overflow-x: hidden;
-    /* Disable horizontal scroll */
-    transition: 0.5s;
-}
-
-
-/* Position the content inside the overlay */
-
-.overlay-content {
-    position: relative;
-    top: 25%;
-    /* 25% from the top */
-    width: 100%;
-    /* 100% width */
-    text-align: center;
-    /* Centered text/links */
-    margin-top: 30px;
-    /* 30px top margin to avoid conflict with the close button on smaller screens */
-}
-
-
-/* The navigation links inside the overlay */
-
-.overlay a {
-    padding: 8px;
-    text-decoration: none;
-    font-size: 36px;
-    color: #818181;
-    display: block;
-    /* Display block instead of inline */
-    transition: 0.3s;
-    /* Transition effects on hover (color) */
-}
-
-
-/* Position the close button (top right corner) */
-
-.overlay .closebtn {
-    position: absolute;
-    top: 20px;
-    right: 45px;
-    font-size: 60px;
-}
-
-
-/*Style overlay content*/
-
-#overlay-content {
-    height: 100%;
-    display: flex;
-    flex-direction: column;
-    flex-wrap: wrap;
-    justify-content: space-around;
-}
-
-#overlay-content img {
-    max-width: 25vw;
-    margin: 1vw;
-    border-radius: 10%;
-}
-
-#imagens-curso {
-    height: 100%;
-    width: 50%;
-    display: flex;
-    flex-direction: column;
-    flex-wrap: wrap;
-    justify-content: space-around;
-}
-
-#descricao-curso {
-    height: 100%;
-    width: 40%;
-    margin-top: 4vw;
-    display: flex;
-    flex-direction: column;
-    font-family: 'Work Sans', sans-serif;
-    color: white;
-}
-
-#descricao-curso button {
-    align-self: center;
-    margin-top: 10vw;
-    font-family: 'Work Sans', sans-serif;
-    font-size: 2vw;
-    color: #d4d6da;
-    padding-top: 1vw;
-    padding-bottom: 1vw;
-    padding-left: 3vw;
-    padding-right: 3vw;
-    background-color: #3a9c3b;
-    border: none;
-    border-radius: 10px;
-    transition: 0.5s;
-}
-
-#descricao-curso button:hover {
-    background-color: #5EC560;
-    color: white;
-    cursor: pointer;
-    transform: scale(1.2);
 }
